@@ -2,27 +2,30 @@
   margin: 0;
   padding: 0;
 }
-.navBar {
+:root {
+  --sidebar-width: 130px;
+}
+.navbar {
   display: flex;
   justify-content: flex-end;
   background-color: #adbc9f;
   align-items: center;
-  margin-left: 130px;
+  margin-left: var(--sidebar-width);
   padding: 16px;
 }
 .logo {
   padding-left: 10px;
 }
-.navLinks {
+.navlinks {
   display: flex;
   padding-right: 10px;
   list-style: none;
 }
-.navItem {
+.navitem {
   outline: none;
   text-decoration: none;
   color: #12372a;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 10px;
 }
 .menu {
@@ -30,7 +33,7 @@
   position: fixed;
   top: 0;
   height: 100vh;
-  width: 130px;
+  width: var(--sidebar-width);
   overflow: auto;
 }
 footer {
@@ -43,10 +46,10 @@ footer {
   left: 0;
   bottom: 0;
   width: calc(100% - 160px);
-  margin-left: 130px;
+  margin-left: var(--sidebar-width);
   justify-content: flex-end;
 }
-.footerText {
+.footertext {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 16px;
 }
@@ -55,17 +58,19 @@ footer {
   margin-left: 150px;
   margin-top: 20px;
 }
-.clinicImage {
+.clinicimage {
   margin-top: 100px;
   margin-left: 100px;
 }
-.aboutText {
+.textcontent > h1 {
   margin-top: 120px;
   margin-left: 20px;
   margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
-.textContent > p {
+.textcontent > p {
   margin: 30px;
   width: 600px;
+  font-family: "Roboto", sans-serif;
 }
